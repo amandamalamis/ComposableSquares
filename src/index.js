@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'; // import the React library
+import ReactDOM from 'react-dom'; // import the ReactDOM library
+// we can create a simple element to display on our HTML page
+// const App = React.createElement("h1", null, "Hello World");
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './components/App';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// with JSX we can perform the same React.createElement() call with the following:
+// const App = <h1>Hello World</h1>;
+// import React, ReactDOM statements
+
+ReactDOM.render(<App />, document.getElementById("root"));
+// equivalent to:
+// ReactDOM.render(App(), document.getElementById("root"));

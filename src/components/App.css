@@ -1,0 +1,6 @@
+h1, p{
+    display: inline-block;
+    text-align: center;
+    columns: 25%;
+    height: 400px;
+}
